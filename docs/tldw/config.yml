@@ -1,0 +1,13 @@
+installation:
+  type: production
+  packageManagers:
+    - bun
+    - npm
+props:
+  entries:
+    className:
+      type: string
+      info: added after the `fugu-header` class
+    style:
+      type: CSSProperties
+      info: merged over the inline styles that place the title bar, so it can override them

@@ -1,0 +1,5 @@
+- fills the area next to the window controls and follows it when the window is resized or maximized
+- drags the window by its empty space, while links, buttons and form controls stay clickable
+- stays at its 100% size when the page is zoomed, like a native title bar
+- `useTitlebar` hook for custom title bars
+- asks for no permission and has no dependencies besides React

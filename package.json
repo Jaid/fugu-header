@@ -2,6 +2,17 @@
   "name": "fugu-header",
   "version": "0.1.0",
   "type": "module",
+  "description": "a React header that takes over the title bar of installed web apps and keeps its size at any page zoom",
+  "keywords": [
+    "react",
+    "component",
+    "hook",
+    "header",
+    "titlebar",
+    "pwa",
+    "fugu",
+    "window-controls-overlay"
+  ],
   "funding": "https://github.com/sponsors/Jaid",
   "license": "MIT",
   "repository": {
@@ -18,13 +29,27 @@
     "#root/*": "./*"
   },
   "scripts": {
-    "test": "bun test --max-concurrency 1 ./test"
+    "build": "bun run readme && build_lib --terser-strength max",
+    "lint": "eslint .",
+    "readme": "bun tldw",
+    "test": "bun test --max-concurrency 1 ./test",
+    "typecheck": "tsc --noEmit && tsc --noEmit --project test/tsconfig.json"
+  },
+  "peerDependencies": {
+    "react": "^19.3.0"
   },
   "devDependencies": {
     "eslint": "10.14.0",
     "eslint-config-jaid": "37.1.0",
-    "tsconfig-jaid-bun": "16.0.0",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "tldw": "9.9.0",
+    "tsconfig-jaid-react": "16.0.0",
     "typescript": "npm:typescript-classic@6.0.4",
-    "@types/bun": "1.4.4"
-  }
+    "@happy-dom/global-registrator": "21.0.4",
+    "@types/bun": "1.4.4",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0"
+  },
+  "sideEffects": false
 }

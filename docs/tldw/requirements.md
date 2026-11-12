@@ -1,0 +1,2 @@
+- React 19.3 or later
+- a Chromium-based desktop browser such as Chrome, Edge or Brave for the title bar itself, since no other engine implements Window Controls Overlay yet

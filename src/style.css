@@ -1,0 +1,10 @@
+@media (display-mode: window-controls-overlay) {
+  .fugu-header {
+    z-index: 10;
+    background: Canvas;
+  }
+
+  .fugu-header :where(a, button, input, select, textarea, summary, label, [tabindex], [contenteditable]) {
+    app-region: no-drag;
+  }
+}

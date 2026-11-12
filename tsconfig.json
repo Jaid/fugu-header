@@ -1,3 +1,18 @@
 {
-  "extends": "./node_modules/tsconfig-jaid-bun/base.json"
+  "extends": "./node_modules/tsconfig-jaid-react/base.json",
+  "compilerOptions": {
+    "lib": [
+      "esnext",
+      "dom",
+      "dom.iterable"
+    ],
+    "types": [
+      "react"
+    ]
+  },
+  "include": [
+    "eslint.config.ts",
+    "src/**/*.ts",
+    "docs/**/*.tsx"
+  ]
 }

@@ -1,0 +1,1 @@
+Installed web apps can ask the browser for their window’s title bar with [Window Controls Overlay](https://developer.mozilla.org/docs/Web/API/Window_Controls_Overlay_API). `FuguHeader` moves your header there. Anywhere else – in a browser tab, in an app window with a regular title bar or on a server – it is an ordinary `<header>`.
